@@ -21,6 +21,18 @@
         <title>ActivePerl community license</title>
         <url>http://www.activestate.com/activeperl/license-agreement</url>
     </license>
+<license name="org.gnu.GPLv3">
+        <title>GPLv3</title>
+        <url>http://www.gnu.org/licenses/gpl.html</url>
+    </license>
+ <package name="com.googlecode.windows-package-manager.NpackdInstallerHelper">
+        <title>Npackd Installer Helper</title>
+        <url>http://code.google.com/p/windows-package-manager/</url>
+        <description>helps to install/uninstall Npackd packages</description>
+        <icon>https://lh5.googleusercontent.com/-3rSJezE_JY4/T2iIZjLuiDI/AAAAAAAAAbo/-KN9No1ejd8/s800/com.googlecode.windows-package-manager.NpackdInstallerHelper.png</icon>
+        <license>org.gnu.GPLv3</license>
+        <category>Development</category>
+    </package>
 <package name="com.activestate.ActivePerl">
         <title>ActivePerl</title>
         <url>http://www.activestate.com/activeperl</url>
@@ -37,6 +49,13 @@
         <license>com.activestate.ActivePerlCommunityLicense</license>
         <category>Development</category>
     </package>
+<version name="1.7" package="com.googlecode.windows-package-manager.NpackdInstallerHelper">
+        <url>http://downloads.sourceforge.net/project/npackd/com.googlecode.windows-package-manager.NpackdInstallerHelper/com.googlecode.windows-package-manager.NpackdInstallerHelper-1.7.zip</url>
+        <sha1>ef81717a0e564155b48d6798272c72dc97f5c098</sha1>
+        <dependency package="com.googlecode.windows-package-manager.NpackdCL" versions="[1.17.9, 2)"/>
+        <dependency package="org.7-zip.SevenZIPA" versions="[9.20, 12)"/>
+        <dependency package="exeproxy" versions="[0.2, 1)"/>
+    </version>
  <version name="5.20.1.2000" package="com.activestate.ActivePerl" type="one-file">
         <file path=".Npackd\Install.bat">call "%npackdih%\InstallMSI.bat" TARGETDIR&#13;
 &#13;
