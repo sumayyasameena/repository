@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!--
+    This file is part of Npackd.
+    
+    Npackd is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    
+    Npackd is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    
+    You should have received a copy of the GNU General Public License
+    along with Npackd.  If not, see <http://www.gnu.org/licenses/>.
+    -->
+    <spec-version>2</spec-version>
+    <license name="com.activestate.ActivePerlCommunityLicense">
+        <title>ActivePerl community license</title>
+        <url>http://www.activestate.com/activeperl/license-agreement</url>
+    </license>
+<package name="com.activestate.ActivePerl">
+        <title>ActivePerl</title>
+        <url>http://www.activestate.com/activeperl</url>
+        <description>Perl programming language</description>
+        <icon>https://lh4.googleusercontent.com/-4mFfsj9jVfQ/Uck99P82-MI/AAAAAAAACP8/bNFf3MedNkM/s800/activeperl.png</icon>
+        <license>com.activestate.ActivePerlCommunityLicense</license>
+        <category>Development</category>
+    </package>
+    <package name="com.activestate.ActivePython">
+        <title>ActivePython</title>
+        <url>http://www.activestate.com/activepython</url>
+        <description>Python</description>
+        <icon>https://lh4.googleusercontent.com/-4mFfsj9jVfQ/Uck99P82-MI/AAAAAAAACP8/bNFf3MedNkM/s800/activeperl.png</icon>
+        <license>com.activestate.ActivePerlCommunityLicense</license>
+        <category>Development</category>
+    </package>
+ <version name="5.20.1.2000" package="com.activestate.ActivePerl" type="one-file">
+        <file path=".Npackd\Install.bat">call "%npackdih%\InstallMSI.bat" TARGETDIR&#13;
+&#13;
+</file>
+        <file path=".Npackd\Uninstall.bat">call "%npackdih%\UninstallMSI.bat"&#13;
+&#13;
+</file>
+        <url>http://downloads.activestate.com/ActivePerl/releases/5.20.1.2000/ActivePerl-5.20.1.2000-MSWin32-x86-64int-298557.msi</url>
+        <sha1>e4878f79dc43837274b121ed9460a6b6bb897cf3</sha1>
+        <dependency package="com.googlecode.windows-package-manager.NpackdInstallerHelper" versions="[1.7, 2)">
+            <variable>npackdih</variable>
+        </dependency>
+    </version>
+
+    <version name="3.3.2" package="com.activestate.ActivePython" type="one-file">
+        <file path=".Npackd\Install.bat">call "%npackdih%\InstallMSI.bat" INSTALLDIR&#13;
+if %errorlevel% neq 0 exit /b %errorlevel%&#13;
+</file>
+        <file path=".Npackd\Uninstall.bat">call "%npackdih%\UninstallMSI.bat"&#13;
+if %errorlevel% neq 0 exit /b %errorlevel%&#13;
+&#13;
+    </file>
+        <url>http://downloads.activestate.com/ActivePython/releases/3.3.2.0/ActivePython-3.3.2.0-win32-x86.msi</url>
+        <sha1>a6c80a2488ccfeb715c48fcc5eb1c265aa6d30b0</sha1>
+        <dependency package="com.googlecode.windows-package-manager.NpackdInstallerHelper" versions="[1.1, 2)">
+            <variable>npackdih</variable>
+        </dependency>
+        <dependency package="com.googlecode.windows-package-manager.NpackdCL" versions="[1.15.7, 2)"/>
+        <dependency package="com.googlecode.windows-package-manager.CLU" versions="[1, 2)"/>
+    </version>
+    <version name="3.3.4.1" package="com.activestate.ActivePython" type="one-file">
+        <file path=".Npackd\Install.bat">call "%npackdih%\InstallMSI.bat" INSTALLDIR&#13;
+if %errorlevel% neq 0 exit /b %errorlevel%&#13;
+</file>
+        <file path=".Npackd\Uninstall.bat">call "%npackdih%\UninstallMSI.bat"&#13;
+if %errorlevel% neq 0 exit /b %errorlevel%&#13;
+&#13;
+    </file>
+        <url>http://downloads.activestate.com/ActivePython/releases/3.3.4.1/ActivePython-3.3.4.1-win32-x86.msi</url>
+        <sha1>8d9a8a08ba46024858643d8732990efa3b058c9f</sha1>
+        <dependency package="com.googlecode.windows-package-manager.NpackdInstallerHelper" versions="[1.1, 2)">
+            <variable>npackdih</variable>
+        </dependency>
+        <dependency package="com.googlecode.windows-package-manager.NpackdCL" versions="[1.15.7, 2)"/>
+        <dependency package="com.googlecode.windows-package-manager.CLU" versions="[1, 2)"/>
+    </version>
+    <version name="3.4.1" package="com.activestate.ActivePython" type="one-file">
+        <file path=".Npackd\Install.bat">call "%npackdih%\InstallMSI.bat" INSTALLDIR&#13;
+&#13;
+</file>
+        <file path=".Npackd\Uninstall.bat">call "%npackdih%\UninstallMSI.bat"&#13;
+&#13;
+    </file>
+        <url>http://downloads.activestate.com/ActivePython/releases/3.4.1.0/ActivePython-3.4.1.0-win32-x86.msi</url>
+        <sha1>4f16188514f9d0d5edf94b230c0d656c092d60ff</sha1>
+        <dependency package="com.googlecode.windows-package-manager.NpackdInstallerHelper" versions="[1.7, 2)">
+            <variable>npackdih</variable>
+        </dependency>
+    </version>
+</root>
