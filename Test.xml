@@ -52,9 +52,7 @@
 <version name="1.7" package="com.googlecode.windows-package-manager.NpackdInstallerHelper">
         <url>http://downloads.sourceforge.net/project/npackd/com.googlecode.windows-package-manager.NpackdInstallerHelper/com.googlecode.windows-package-manager.NpackdInstallerHelper-1.7.zip</url>
         <sha1>ef81717a0e564155b48d6798272c72dc97f5c098</sha1>
-        <dependency package="com.googlecode.windows-package-manager.NpackdCL" versions="[1.17.9, 2)"/>
-        <dependency package="org.7-zip.SevenZIPA" versions="[9.20, 12)"/>
-        <dependency package="exeproxy" versions="[0.2, 1)"/>
+        
     </version>
  <version name="5.20.1.2000" package="com.activestate.ActivePerl" type="one-file">
         <file path=".Npackd\Install.bat">call "%npackdih%\InstallMSI.bat" TARGETDIR&#13;
@@ -65,9 +63,7 @@
 </file>
         <url>http://downloads.activestate.com/ActivePerl/releases/5.20.1.2000/ActivePerl-5.20.1.2000-MSWin32-x86-64int-298557.msi</url>
         <sha1>e4878f79dc43837274b121ed9460a6b6bb897cf3</sha1>
-        <dependency package="com.googlecode.windows-package-manager.NpackdInstallerHelper" versions="[1.7, 2)">
-            <variable>npackdih</variable>
-        </dependency>
+        
     </version>
 
     <version name="3.3.2" package="com.activestate.ActivePython" type="one-file">
