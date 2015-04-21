@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <spec-version>2</spec-version>
+      <license name="org.gnu.GPLv3">
+        <title>GPLv3</title>
+        <url>http://www.gnu.org/licenses/gpl.html</url>
+    </license>
+ <package name="com.nokia.QtDev-i686-w64">
+        <title>Qt for MinGW-w64 32 bit</title>
+        <url>http://qt.nokia.com/products/library</url>
+        <description>C++ library (development)</description>
+        <icon>https://lh4.googleusercontent.com/-M_yIydoQVxw/USjbka862GI/AAAAAAAAAws/UJAvKDOPwkY/s800/qt.png</icon>
+        <license>org.gnu.GPLv3</license>
+        <category>Development</category>
+    </package>
+    <version name="0.5" package="quazip-dev-i686-w64-static">
+        <url>http://downloads.sourceforge.net/project/npackd/quazip-dev-i686-w64-static.zip</url>
+        <sha1>c0b4ae5eba44b9f6434b91c2ee903950a2510da5</sha1>
+        <dependency package="com.nokia.QtDev-i686-w64-Npackd-Release" versions="[4.8.2, 4.8.2]"/>
+        <dependency package="net.sourceforge.mingw-w64.MinGWW64" versions="[4.7.2, 4.7.2]"/>
+    </version>
+    <version name="0.6.2" package="quazip-dev-i686-w64-static">
+        <url>http://downloads.sourceforge.net/project/npackd/quazip-dev-i686-w64-static-0.6.2.zip</url>
+        <sha1>c8b9a7a126fcff2db43877ea78478a3f66bf4cb4</sha1>
+        <dependency package="com.nokia.QtDev-i686-w64-Npackd-Release" versions="[5.2.1, 5.2.1]"/>
+    </version>
+<version name="0.4.2" package="net.sourceforge.quazip.QuaZIPSource">
+        <file path=".Npackd\Install.bat">for /f "delims=" %%x in ('dir /b quazip*') do set name=%%x
+cd "%name%"        
+for /f "delims=" %%a in ('dir /b') do (
+  move "%%a" ..
+)
+cd ..
+rmdir "%name%"
+</file>
+        <url>http://downloads.sourceforge.net/project/quazip/quazip/0.4.2/quazip-0.4.2.zip?ts=1315082566</url>
+        <sha1>d4506840f405c141465048f4835c757c92557b16</sha1>
+        <dependency package="net.zlib.ZLibSource" versions="[1.2.5, 1.2.5]"/>
+    </version>
+    <version name="0.4.3" package="net.sourceforge.quazip.QuaZIPSource">
+        <file path=".Npackd\Install.bat">for /f "delims=" %%x in ('dir /b quazip*') do set name=%%x&#13;
+cd "%name%"        &#13;
+for /f "delims=" %%a in ('dir /b') do (&#13;
+  move "%%a" ..&#13;
+)&#13;
+cd ..&#13;
+rmdir "%name%"&#13;
+</file>
+        <url>http://downloads.sourceforge.net/project/quazip/quazip/0.4.3/quazip-0.4.3.zip?ts=1318172630</url>
+        <sha1>60d0bfbb49fe2ee18c7759d7a2d03fb2eb07ee40</sha1>
+        <dependency package="net.zlib.ZLibSource" versions="[1.2.5, 1.2.5]"/>
+    </version>
+    <version name="0.4.4" package="net.sourceforge.quazip.QuaZIPSource">
+        <file path=".Npackd\Install.bat">for /f "delims=" %%x in ('dir /b quazip*') do set name=%%x
+cd "%name%"        
+for /f "delims=" %%a in ('dir /b') do (
+  move "%%a" ..
+)
+cd ..
+rmdir "%name%"
+</file>
+        <url>http://downloads.sourceforge.net/project/quazip/quazip/0.4.4/quazip-0.4.4.zip</url>
+        <sha1>cfc5ca35ff157e77328fc55de40b73591f425592</sha1>
+        <dependency package="net.zlib.ZLibSource" versions="[1.2.5, 1.2.5]"/>
+    </version>
+    <version name="0.5" package="net.sourceforge.quazip.QuaZIPSource">
+        <file path=".Npackd\Install.bat">for /f "delims=" %%x in ('dir /b quazip*') do set name=%%x
+cd "%name%"        
+for /f "delims=" %%a in ('dir /b') do (
+  move "%%a" ..
+)
+cd ..
+rmdir "%name%"
+</file>
+        <url>http://downloads.sourceforge.net/project/quazip/quazip/0.5/quazip-0.5.zip</url>
+        <sha1>154e459acd763e5114dc1bb2fe528f9a515feba5</sha1>
+        <dependency package="net.zlib.ZLibSource" versions="[1.2.5, 1.2.5]"/>
+    </version>
+    <version name="0.5.1" package="net.sourceforge.quazip.QuaZIPSource">
+        <file path=".Npackd\Install.bat">for /f "delims=" %%x in ('dir /b quazip*') do set name=%%x&#13;
+cd "%name%"        &#13;
+for /f "delims=" %%a in ('dir /b') do (&#13;
+  move "%%a" ..&#13;
+)&#13;
+cd ..&#13;
+rmdir "%name%"&#13;
+</file>
+        <url>http://downloads.sourceforge.net/project/quazip/quazip/0.5.1/quazip-0.5.1.zip</url>
+        <sha1>ddbd4cf48a24ea3b4fad77212e8f71ef5012c54f</sha1>
+        <dependency package="net.zlib.ZLibSource" versions="[1.2.5, 1.2.5]"/>
+    </version>
+ <version name="0.6.2" package="net.sourceforge.quazip.QuaZIPSource">
+        <file path=".Npackd\Install.bat">for /f "delims=" %%x in ('dir /b quazip*') do set name=%%x&#13;
+cd "%name%"        &#13;
+for /f "delims=" %%a in ('dir /b') do (&#13;
+  move "%%a" ..&#13;
+)&#13;
+cd ..&#13;
+rmdir "%name%"&#13;
+</file>
+        <url>http://downloads.sourceforge.net/project/quazip/quazip/0.6.2/quazip-0.6.2.zip</url>
+        <sha1>7f2ea645745b8a263691abc52696d136b16b0972</sha1>
+        <dependency package="net.zlib.ZLibSource" versions="[1.2.5, 1.2.5]"/>
+    </version>
+</root>
