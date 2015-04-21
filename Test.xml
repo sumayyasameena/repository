@@ -80,11 +80,7 @@ if %errorlevel% neq 0 exit /b %errorlevel%&#13;
     </file>
         <url>http://downloads.activestate.com/ActivePython/releases/3.3.2.0/ActivePython-3.3.2.0-win32-x86.msi</url>
         <sha1>a6c80a2488ccfeb715c48fcc5eb1c265aa6d30b0</sha1>
-        <dependency package="com.googlecode.windows-package-manager.NpackdInstallerHelper" versions="[1.1, 2)">
-            <variable>npackdih</variable>
-        </dependency>
-        <dependency package="com.googlecode.windows-package-manager.NpackdCL" versions="[1.15.7, 2)"/>
-        <dependency package="com.googlecode.windows-package-manager.CLU" versions="[1, 2)"/>
+        
     </version>
     <version name="3.3.4.1" package="com.activestate.ActivePython" type="one-file">
         <file path=".Npackd\Install.bat">call "%npackdih%\InstallMSI.bat" INSTALLDIR&#13;
@@ -96,11 +92,7 @@ if %errorlevel% neq 0 exit /b %errorlevel%&#13;
     </file>
         <url>http://downloads.activestate.com/ActivePython/releases/3.3.4.1/ActivePython-3.3.4.1-win32-x86.msi</url>
         <sha1>8d9a8a08ba46024858643d8732990efa3b058c9f</sha1>
-        <dependency package="com.googlecode.windows-package-manager.NpackdInstallerHelper" versions="[1.1, 2)">
-            <variable>npackdih</variable>
-        </dependency>
-        <dependency package="com.googlecode.windows-package-manager.NpackdCL" versions="[1.15.7, 2)"/>
-        <dependency package="com.googlecode.windows-package-manager.CLU" versions="[1, 2)"/>
+        
     </version>
     <version name="3.4.1" package="com.activestate.ActivePython" type="one-file">
         <file path=".Npackd\Install.bat">call "%npackdih%\InstallMSI.bat" INSTALLDIR&#13;
@@ -111,8 +103,6 @@ if %errorlevel% neq 0 exit /b %errorlevel%&#13;
     </file>
         <url>http://downloads.activestate.com/ActivePython/releases/3.4.1.0/ActivePython-3.4.1.0-win32-x86.msi</url>
         <sha1>4f16188514f9d0d5edf94b230c0d656c092d60ff</sha1>
-        <dependency package="com.googlecode.windows-package-manager.NpackdInstallerHelper" versions="[1.7, 2)">
-            <variable>npackdih</variable>
-        </dependency>
+        
     </version>
 </root>
